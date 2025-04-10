@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oldman</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 80vw;
+            height: 80vh;
+            gap: 10px;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+        .item img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .item:nth-child(5) {
+            grid-column: span 3;
+            grid-row: span 3;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片1"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片2"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片3"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片4"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片5"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片6"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片7"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片8"></a></div>
+        <div class="item"><a href="链接"><img src="https://via.placeholder.com/150" alt="图片9"></a></div>
+    </div>
+</body>
+</html>
