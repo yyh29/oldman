@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8"> <!-- 设置字符编码为 UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配移动设备 -->
-    <title>老人</title> <!-- 网页标题 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老人</title>
     <style>
         body {
-            display: flex; /* 使用弹性布局 */
-            justify-content: center; /* 水平居中对齐 */
-            align-items: center; /* 垂直居中对齐 */
-            height: 100vh; /* 设置高度为视口高度 */
-            margin: 0; /* 去除默认外边距 */
-            background-color: #f0f0f0; /* 设置背景颜色 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
         .grid {
-            display: grid; /* 使用网格布局 */
-            grid-template-columns: 1fr 1fr; /* 设置两列 */
-            grid-template-rows: 1fr 1fr 1fr; /* 设置三行 */
-            width: 80vw; /* 设置宽度为视口宽度的 80% */
-            height: 80vh; /* 设置高度为视口高度的 80% */
-            gap: 10px; /* 设置格子之间的间隙 */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 80vw;
+            height: 80vh;
+            gap: 10px;
         }
         .item {
-            display: flex; /* 使用弹性布局 */
-            justify-content: center; /* 水平居中对齐 */
-            align-items: center; /* 垂直居中对齐 */
-            background-color: #fff; /* 设置格子背景颜色 */
-            border: 1px solid #ccc; /* 设置边框样式 */
-            text-align: center; /* 文本居中对齐 */
-            overflow: hidden; /* 隐藏超出部分 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            text-align: center;
+            overflow: hidden;
         }
         .item:nth-child(1) {
-            grid-column: 1; /* 第一格位于第一列 */
-            grid-row: 1; /* 第一格位于第一行 */
+            grid-column: 1;
+            grid-row: 1;
         }
         .item:nth-child(2) {
-            grid-column: 2; /* 第二格位于第二列 */
-            grid-row: 1; /* 第二格位于第一行 */
+            grid-column: 2;
+            grid-row: 1;
         }
         .item:nth-child(3) {
-            grid-column: 1 / span 2; /* 中间格子跨越两列 */
-            grid-row: 2; /* 中间格子位于第二行 */
+            grid-column: 1 / span 2;
+            grid-row: 2;
         }
         .item:nth-child(4) {
-            grid-column: 1; /* 第四格位于第一列 */
-            grid-row: 3; /* 第四格位于第三行 */
+            grid-column: 1;
+            grid-row: 3;
         }
         .item:nth-child(5) {
-            grid-column: 2; /* 第五格位于第二列 */
-            grid-row: 3; /* 第五格位于第三行 */
+            grid-column: 2;
+            grid-row: 3;
         }   
         .item img {
       width: 100%;
       height: 100%;
-      object-fit: contain; /* 让图片完整显示并适应容器，可根据需要换成 cover 等其他值 */
+      object-fit: contain;
         }
     </style>
 </head>
 <body>
-    <div class="grid"> <!-- 网格容器 -->
-        <div class="item"><a href="链接" target="_blank"><img src="bus.png" alt="左上"></a></div> <!-- 第一格 -->
-        <div class="item"><a href="https://www.hko.gov.hk/sc/index.html" target="_blank"><img src="twt.png" alt="右上"></a></div> <!-- 第二格 -->
-        <div class="item"><a href="链接" target="_blank"><img src="jy.png" alt="中间"></a></div> <!-- 中间格 -->
-        <div class="item"><a href="https://www.youtube.com" target="_blank"><img src="youtube.png" alt="左下"></a></div> <!-- 第四格 -->
-        <div class="item"><a href="https://chat.deepseek.com/sign_in" target="_blank"><img src="deepseek.png" alt="右下"></a></div> <!-- 第五格 -->
+    <div class="grid">
+        <div class="item"><a href="链接" target="_blank"><img src="bus.png" alt="左上"></a></div>
+        <div class="item"><a href="https://www.hko.gov.hk/sc/index.html" target="_blank"><img src="twt.png" alt="右上"></a></div>
+        <div class="item"><a href="链接" target="_blank"><img src="jy.png" alt="中间"></a></div>
+        <div class="item"><a href="https://www.youtube.com" target="_blank"><img src="youtube.png" alt="左下"></a></div>
+        <div class="item"><a href="https://chat.deepseek.com/sign_in" target="_blank"><img src="deepseek.png" alt="右下"></a></div>
     </div>
 </body>
 </html>
